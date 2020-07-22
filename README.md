@@ -3,16 +3,68 @@
 This application demonstrates the creation and transfer of container shipments between actors leveraging Hyperledger Fabric in the supply chain. In this demo app we will set up the minimum number of nodes required to develop chaincode. It has a single peer and a single organization.
 This code is based on code written by the Hyperledger Fabric community. Source code can be found here: (https://github.com/hyperledger/fabric-samples).
  
+ 
+## Install pre-requisites
+
+1. Install go:
+
+1.1 Downloading the Go tarball
+
+Run the following command as a user with sudo privileges to download and extract the Go binary archive in the /usr/local directory:
+```
+wget -c https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz -O - | sudo tar -xz -C /usr/local
+```
+1.2 Adjusting the Path Variable
+By adding the location of the Go directory to the $PATH environment variable, the system will know where to find the Go executable binaries.
+
+This can be done by appending the following line either to the /etc/profile file (for a system-wide installation) or the $HOME/.profile file (for a current user installation):
+```
+sudo nano ~/.profile
+export PATH=$PATH:/usr/local/go/bin
+```
+
+
+Save the file, and load the new PATH environment variable into the current shell session:
+```
+source ~/.profile
+```
+1.3 Verifying the Go Installation
+Verify the installation by printing the Go version:
+```
+go version
+```
+The output should look something like this:
+```
+go version go1.14.2 linux/amd64
+ ```
+ 1.4 Export the GOPATH
+```
+export GOPATH=$HOME/go
+```
+
+2. Install node.js and npm
+
+```
+sudo apt update
+
+sudo apt install nodejs
+
+sudo apt install npm
+```
+
+ 
 ## Starting the Application
 1. Install the required libraries from the `package.json` file
+
 ```
+sudo apt update 
+sudo apt install yarnpkg
 yarn
 ```
 
 
-```
-
 2. Install Go dependencies
+
 ```
 go get github.com/cespare/xxhash
 go get github.com/pkg/errors
