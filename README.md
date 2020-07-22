@@ -9,12 +9,10 @@ This code is based on code written by the Hyperledger Fabric community. Source c
 yarn
 ```
 
-2. Set `GOPATH` variable
-```
-export GOPATH=$GOPATH:~/go:~/go/src
+
 ```
 
-3. Install Go dependencies
+2. Install Go dependencies
 ```
 go get github.com/cespare/xxhash
 go get github.com/pkg/errors
@@ -27,23 +25,23 @@ go get github.com/iotaledger/iota.go/pow
 go get github.com/iotaledger/iota.go/trinary
 ```
 
-4. Start the Hyperledger Fabric network
+3. Start the Hyperledger Fabric network
 ```
 ./startFabric.sh
 ```
 
-5. Register the Admin and User components of our network
+4. Register the Admin and User components of our network
 ```
 node registerAdmin.js
 node registerUser.js
 ```
 
-6. Start the client application
+5. Start the client application
 ```
 yarn dev
 ```
 
-7. Load the client by opening localhost:3000 in any browser window of your choice, and you should see the user interface for our simple application at this URL.
+6. Load the client by opening localhost:3000 in any browser window of your choice, and you should see the user interface for our simple application at this URL.
 
 
 ## Testing
