@@ -39,7 +39,7 @@ func TransferTokens(seed string, keyIndex uint64, recipientAddress string) uint6
 	walletAddress, err := address.GenerateAddress(seed, keyIndex, SecurityLevelMedium, true)
 	must(err)
 
-	balances, err := api.GetBalances(trinary.Hashes{walletAddress}, 10)
+	balances, err := api.GetBalances(trinary.Hashes{walletAddress}, 100)
 	must(err)
 	walletBalance := balances.Balances[0]
 

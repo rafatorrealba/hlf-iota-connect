@@ -1265,14 +1265,6 @@
     "@types/long" "*"
     "@types/node" "*"
 
-"@types/bytebuffer@^5.0.40":
-  version "5.0.41"
-  resolved "https://registry.yarnpkg.com/@types/bytebuffer/-/bytebuffer-5.0.41.tgz#6850dba4d4cd2846596b4842874d5bfc01cd3db1"
-  integrity sha512-Mdrv4YcaHvpkx25ksqqFaezktx3yZRcd51GZY0rY/9avyaqZdiT/GiWRhfrJhMpgzXqTOSHgGvsumGxJFNiZZA==
-  dependencies:
-    "@types/long" "*"
-    "@types/node" "*"
-
 "@types/common-tags@^1.4.0":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@types/common-tags/-/common-tags-1.8.0.tgz#79d55e748d730b997be5b7fce4b74488d8b26a6b"
@@ -1361,6 +1353,11 @@
   integrity sha512-K8/LfZq2duW33XW/tFwEAfnZlqIfVsoyRB3kfXdPXYhl0nfM8mmh7GS0jg7WrX2Dgq/0Ha/pR1PaR+BvmWwjiQ==
   dependencies:
     "@types/yargs-parser" "*"
+
+"@types/yup@^0.26.24":
+  version "0.26.24"
+  resolved "https://registry.yarnpkg.com/@types/yup/-/yup-0.26.24.tgz#c24170b3a5c867b4fabd49fcc42fe45f780cb153"
+  integrity sha512-x0bhHnYjH5mZit4HivUYbTMO4LouOTGwp/LLxSL1mbJYVwNJtHYESH0ed2bwM1lkI2yDmsoCDYJnWEgHeJDACg==
 
 "@typescript-eslint/eslint-plugin@^2.2.0":
   version "2.8.0"
@@ -3693,19 +3690,6 @@ elliptic@^6.0.0, elliptic@^6.2.3:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
-elliptic@^6.5.2:
-  version "6.5.3"
-  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.3.tgz#cb59eb2efdaf73a0bd78ccd7015a62ad6e0f93d6"
-  integrity sha512-IMqzv5wNQf+E6aHeIqATs0tOLeOTwj1QKbRcS3jBbYkl5oLAserA8yJTT7/VyHUYG91PRmPyeQDObKLPpeS4dw==
-  dependencies:
-    bn.js "^4.4.0"
-    brorand "^1.0.1"
-    hash.js "^1.0.0"
-    hmac-drbg "^1.0.0"
-    inherits "^2.0.1"
-    minimalistic-assert "^1.0.0"
-    minimalistic-crypto-utils "^1.0.0"
-
 emoji-regex@^7.0.1, emoji-regex@^7.0.2:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
@@ -4243,19 +4227,7 @@ eyes@0.1.x:
   resolved "https://registry.yarnpkg.com/eyes/-/eyes-0.1.8.tgz#62cf120234c683785d902348a800ef3e0cc20bc0"
   integrity sha1-Ys8SAjTGg3hdkCNIqADvPgzCC8A=
 
-fabric-ca-client@^1.4.7:
-  version "1.4.11"
-  resolved "https://registry.yarnpkg.com/fabric-ca-client/-/fabric-ca-client-1.4.11.tgz#9dcfda5c6150903547c35052ba156d8410eb67f2"
-  integrity sha512-CP61Icnxa1giNgAIHm/+ysvXukO1J2fY9dGvLgHa3nSLLDqebdcMxvWZ6kG0QbM+Mz1WQn719+r2h3+BpTmAKA==
-  dependencies:
-    grpc "1.24.2"
-    jsrsasign "^8.0.16"
-    lodash.clone "4.5.0"
-    url "^0.11.0"
-    util "^0.10.3"
-    winston "^2.4.0"
-
-fabric-ca-client@latest:
+fabric-ca-client@^1.4.4, fabric-ca-client@latest:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/fabric-ca-client/-/fabric-ca-client-1.4.4.tgz#a7dfbf446a62c27faeef616a6971604f9ebf40c8"
   integrity sha512-lhs/ywszaatqCPObJx/884nGT4i3XWPqF/GKAhIoTfMWk5hXWoOliaV1pCbfkT6BVQMgYaoyx+k8hl+TiBlsDw==
@@ -4275,35 +4247,36 @@ fabric-ca-client@latest:
     util "^0.10.3"
     winston "^2.2.0"
 
-fabric-client@^1.4.7:
-  version "1.4.10"
-  resolved "https://registry.yarnpkg.com/fabric-client/-/fabric-client-1.4.10.tgz#333f559be3218428594898df9bc3528032c576cf"
-  integrity sha512-o4t8fibsAxzi7wF7fYM51jlwK3SyNrFPXDb0OrRNQVPp0cyNw7HxrHgK/yjAdUIhSEDeFKW7WlUP+dYlmWHKPQ==
+fabric-client@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/fabric-client/-/fabric-client-1.4.4.tgz#ecc1185bdb81dfe962781d1a2477b257d4826cfd"
+  integrity sha512-QIC9dFCmQN5pWx23CoWq8cJTYwChXB7kEoZbpls5xPZaXtwNnvwBdbVWT+E0qwZQkhpLYe8y3N/A6jC5X3Cqtw==
   dependencies:
     "@types/bytebuffer" "^5.0.34"
     bn.js "^4.11.3"
     callsite "^1.0.0"
-    elliptic "^6.5.2"
+    elliptic "^6.2.3"
     fabric-ca-client latest
-    fs-extra "^8.1.0"
-    grpc "1.24.2"
+    fs-extra "^6.0.1"
+    grpc "1.21.1"
+    hoek "^4.2.1"
     ignore-walk "^3.0.0"
     js-sha3 "^0.7.0"
     js-yaml "^3.9.0"
-    jsrsasign "^8.0.16"
+    jsrsasign "^7.2.2"
+    jssha "^2.1.0"
     klaw "^2.0.0"
-    lodash.clone "4.5.0"
     long "^4.0.0"
     nano "^6.4.4"
     nconf "^0.10.0"
+    pkcs11js "^1.0.6"
     promise-settle "^0.3.0"
     protobufjs "5.0.3"
     sjcl "1.0.7"
+    stream-buffers "3.0.1"
     tar-stream "1.6.1"
     url "^0.11.0"
-    winston "^2.4.0"
-  optionalDependencies:
-    pkcs11js "^1.0.6"
+    winston "^2.2.0"
 
 fast-deep-equal@^2.0.1:
   version "2.0.1"
@@ -4820,18 +4793,6 @@ grpc@1.21.1:
     node-pre-gyp "^0.13.0"
     protobufjs "^5.0.3"
 
-grpc@1.24.2:
-  version "1.24.2"
-  resolved "https://registry.yarnpkg.com/grpc/-/grpc-1.24.2.tgz#76d047bfa7b05b607cbbe3abb99065dcefe0c099"
-  integrity sha512-EG3WH6AWMVvAiV15d+lr+K77HJ/KV/3FvMpjKjulXHbTwgDZkhkcWbwhxFAoTdxTkQvy0WFcO3Nog50QBbHZWw==
-  dependencies:
-    "@types/bytebuffer" "^5.0.40"
-    lodash.camelcase "^4.3.0"
-    lodash.clone "^4.5.0"
-    nan "^2.13.2"
-    node-pre-gyp "^0.14.0"
-    protobufjs "^5.0.3"
-
 gzip-size@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/gzip-size/-/gzip-size-5.1.1.tgz#cb9bee692f87c0612b232840a873904e4c135274"
@@ -4968,6 +4929,11 @@ hmac-drbg@^1.0.0:
     hash.js "^1.0.3"
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
+
+hoek@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.1.tgz#9634502aa12c445dd5a7c5734b572bb8738aacbb"
+  integrity sha512-QLg82fGkfnJ/4iy1xZ81/9SIJiq1NGFUMGs6ParyjBZr6jW2Ufj/snDqTHixNlHdPNwN2RLVD0Pi3igeK9+JfA==
 
 hosted-git-info@^2.1.4:
   version "2.8.5"
@@ -6286,11 +6252,6 @@ jsrsasign@^7.2.2:
   resolved "https://registry.yarnpkg.com/jsrsasign/-/jsrsasign-7.2.2.tgz#ae5230cb5574451bb979a9cc697428c60f598d20"
   integrity sha1-rlIwy1V0RRu5eanMaXQoxg9ZjSA=
 
-jsrsasign@^8.0.16:
-  version "8.0.20"
-  resolved "https://registry.yarnpkg.com/jsrsasign/-/jsrsasign-8.0.20.tgz#37d8029c9d8f794d8ac8d8998bce319921491f11"
-  integrity sha512-JTXt9+nqdynIB8wFsS6e8ffHhIjilhywXwdaEVHSj9OVmwldG2H0EoCqkQ+KXkm2tVqREfH/HEmklY4k1/6Rcg==
-
 jssha@^2.1.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/jssha/-/jssha-2.3.1.tgz#147b2125369035ca4b2f7d210dc539f009b3de9a"
@@ -6477,7 +6438,7 @@ lodash.camelcase@^4.3.0:
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
 
-lodash.clone@4.5.0, lodash.clone@^4.5.0:
+lodash.clone@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clone/-/lodash.clone-4.5.0.tgz#195870450f5a13192478df4bc3d23d2dea1907b6"
   integrity sha1-GVhwRQ9aExkkeN9Lw9I9LeoZB7Y=
@@ -7094,22 +7055,6 @@ node-pre-gyp@^0.13.0:
     rimraf "^2.6.1"
     semver "^5.3.0"
     tar "^4"
-
-node-pre-gyp@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.14.0.tgz#9a0596533b877289bcad4e143982ca3d904ddc83"
-  integrity sha512-+CvDC7ZttU/sSt9rFjix/P05iS43qHCOOGzcr3Ry99bXG7VX953+vFyEuph/tfqoYu8dttBkE86JSKBO2OzcxA==
-  dependencies:
-    detect-libc "^1.0.2"
-    mkdirp "^0.5.1"
-    needle "^2.2.1"
-    nopt "^4.0.1"
-    npm-packlist "^1.1.6"
-    npmlog "^4.0.2"
-    rc "^1.2.7"
-    rimraf "^2.6.1"
-    semver "^5.3.0"
-    tar "^4.4.2"
 
 node-releases@^1.1.29, node-releases@^1.1.40:
   version "1.1.40"
@@ -9840,6 +9785,11 @@ stream-browserify@^2.0.1:
     inherits "~2.0.1"
     readable-stream "^2.0.2"
 
+stream-buffers@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/stream-buffers/-/stream-buffers-3.0.1.tgz#68a38c5faadeded79ff79988d368e3fb1325ef06"
+  integrity sha1-aKOMX6re3tef95mI02jj+xMl7wY=
+
 stream-each@^1.1.0:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/stream-each/-/stream-each-1.2.3.tgz#ebe27a0c389b04fbcc233642952e10731afa9bae"
@@ -10117,7 +10067,7 @@ tar-stream@1.6.1:
     to-buffer "^1.1.0"
     xtend "^4.0.0"
 
-tar@^4, tar@^4.4.2:
+tar@^4:
   version "4.4.13"
   resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.13.tgz#43b364bc52888d555298637b10d60790254ab525"
   integrity sha512-w2VwSrBoHa5BsSyH+KxEqeQBAllHhccyMFVHtGtdMpF4W7IRWfZjFiQceJPChOeTsSDVUpER2T8FA93pr0L+QA==
@@ -10883,18 +10833,6 @@ winston@^2.2.0:
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/winston/-/winston-2.4.4.tgz#a01e4d1d0a103cf4eada6fc1f886b3110d71c34b"
   integrity sha512-NBo2Pepn4hK4V01UfcWcDlmiVTs7VTB1h7bgnB0rgP146bYhMxX0ypCz3lBOfNxCO4Zuek7yeT+y/zM1OfMw4Q==
-  dependencies:
-    async "~1.0.0"
-    colors "1.0.x"
-    cycle "1.0.x"
-    eyes "0.1.x"
-    isstream "0.1.x"
-    stack-trace "0.0.x"
-
-winston@^2.4.0:
-  version "2.4.5"
-  resolved "https://registry.yarnpkg.com/winston/-/winston-2.4.5.tgz#f2e431d56154c4ea765545fc1003bd340c95b59a"
-  integrity sha512-TWoamHt5yYvsMarGlGEQE59SbJHqGsZV8/lwC+iCcGeAe0vUaOh+Lv6SYM17ouzC/a/LB1/hz/7sxFBtlu1l4A==
   dependencies:
     async "~1.0.0"
     colors "1.0.x"

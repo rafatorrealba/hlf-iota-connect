@@ -28,18 +28,6 @@ docker-compose -f ./docker-compose.yml up -d cli
 docker exec cli go get github.com/cespare/xxhash
 docker exec cli go get github.com/pkg/errors
 
-docker exec cli go get google.golang.org/protobuf/encoding/prototext
-
-docker exec cli go install google.golang.org/protobuf/encoding/prototext
-
-#docker exec cli go get google.golang.org/protobuf-go/encoding/prototext
-
-#docker exec cli go install google.golang.org/protobuf-go/encoding/prototext
-
-docker exec cli go get google.golang.org/grpc
-docker exec cli go install google.golang.org/grpc
-
-
 docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode install -n fabric-demo-app -v 1.0 -p github.com/fabric-demo-app
 docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp" cli peer chaincode instantiate -o orderer.example.com:7050 -C mychannel -n fabric-demo-app -v 1.0 -c '{"Args":[""]}' -P "OR ('Org1MSP.member','Org2MSP.member')"
 sleep 10

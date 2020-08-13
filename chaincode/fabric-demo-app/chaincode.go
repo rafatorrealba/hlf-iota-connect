@@ -21,10 +21,9 @@ import (
 	"strconv"
 	"time"
 	"strings"
-        
-     
-	"github.com/hyperledger/fabric-chaincode-go/shim"
-	sc"github.com/hyperledger/fabric-protos-go/peer"
+
+	"github.com/hyperledger/fabric/core/chaincode/shim"
+	sc "github.com/hyperledger/fabric/protos/peer"
 	"github.com/iota"
 )
 
@@ -151,7 +150,7 @@ func (s *SmartContract) initLedger(APIstub shim.ChaincodeStubInterface) sc.Respo
 		walletAddress, walletSeed := iota.CreateWallet()
 		participants[i].Seed = walletSeed
 		participants[i].Address = walletAddress
-          	participants[i].KeyIndex = 0
+		participants[i].KeyIndex = 0
 		participantAsBytes, _ := json.Marshal(participants[i])
 		APIstub.PutState(participants[i].Role, participantAsBytes)
 	}

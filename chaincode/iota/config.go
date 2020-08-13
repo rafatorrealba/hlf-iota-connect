@@ -15,6 +15,6 @@ const MamMode = "public" // "restricted" "private"
 const MamSideKey = ""
 
 // IOTA Wallet
-const DefaultWalletSeed = "9NKZYQHOHAFUYRZFUCOUUOZJXZLFHRTJHUIFMUKNGPZRNOCBLJM9ZTHMAKUHXIMMMAJRZKQNDLYIVGKN"
-const DefaultWalletKeyIndex = 1
-const DefaultAmount = 5
+const DefaultWalletSeed = "JMQGUNIURZVUMFORRZKY9S9XBSRLUPDO9EMDDQVNXSTBSTVJIGTGVXPIHGTFNKLJZCPRUJOKHAPFIDKFE"
+const DefaultWalletKeyIndex = 0
+const DefaultAmount = 10
